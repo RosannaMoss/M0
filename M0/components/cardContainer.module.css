@@ -1,0 +1,8 @@
+/* CardContainer.css */
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Reduced gap for closer spacing */
+  padding: 20px;
+  background-color: #f7f7f7; /* Optional background color */
+}

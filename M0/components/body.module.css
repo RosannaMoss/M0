@@ -1,0 +1,41 @@
+.bodyBanner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px; /* Adjust height as needed */
+  background-image: url("../assets/Banner-Tree-Roots-1-1.jpg"); /* Replace with actual image path */
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  text-align: center;
+}
+
+.bodyBanner h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.searchBar {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.searchBar input {
+  padding: 8px;
+  width: 200px;
+  border: 1px solid #333;
+}
+
+.searchBar button {
+  padding: 8px 12px;
+  background-color: #044313;
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+  font-weight: bolder;
+  margin-left: 2%;
+  color: white;
+}
