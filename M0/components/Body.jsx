@@ -7,7 +7,7 @@ export default function Body() {
       <section className={styles.bodyBanner}>
         <h1>It's Tree Time!</h1>
         <div className={styles.searchBar}>
-          <input type="text" placeholder="Search..." />
+          <input type="text" placeholder="Search for a tree..." />
           <button>Search</button>
         </div>
       </section>

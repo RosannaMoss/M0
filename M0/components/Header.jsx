@@ -24,7 +24,10 @@ export default function Header() {
         </div>
 
         {/* Hamburger menu icon for mobile */}
-        <div className={styles.hamburgerMenu} onClick={toggleMenu}>
+        <div
+          className={`${styles.hamburgerMenu} ${menuOpen ? styles.open : ""}`}
+          onClick={toggleMenu}
+        >
           <span></span>
           <span></span>
           <span></span>
@@ -35,6 +38,9 @@ export default function Header() {
           <a href="#">Home</a>
           <a href="#">About Us</a>
           <a href="#">Contact Us</a>
+          <a className={styles.loginLink} href="#">
+            Login
+          </a>
         </nav>
 
         <button className={styles.loginButton}>Login</button>
