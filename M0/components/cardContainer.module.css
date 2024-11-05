@@ -1,8 +1,15 @@
-/* CardContainer.css */
 .cardContainer {
   display: flex;
   justify-content: center;
-  gap: 20px; /* Reduced gap for closer spacing */
+  gap: 20px;
   padding: 20px;
-  background-color: #f7f7f7; /* Optional background color */
+  background-color: #f7f7f7;
+}
+
+@media (max-width: 768px) {
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

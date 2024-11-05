@@ -6,6 +6,7 @@
   padding: 10px 20px;
   background-color: #dfffd8;
   width: 100%;
+  left: 0;
   box-sizing: border-box;
 }
 
@@ -26,19 +27,6 @@
   font-weight: bold;
 }
 
-.headings {
-  display: flex;
-  font-style: none;
-  gap: 15px;
-  text-decoration: none;
-}
-
-.headings a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bolder;
-}
-
 .loginButton {
   padding: 5px 10px;
   width: 6%;
@@ -49,76 +37,55 @@
   border-radius: 5%;
   cursor: pointer;
 }
-
-/* Hamburger menu icon (hidden on desktop) */
-/*
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 4px;
+.navLinks {
+  display: flex;
+  font-style: none;
+  gap: 15px;
+  text-decoration: none;
 }
 
-.hamburger span {
+.navLinks a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bolder;
+}
+
+/* Hamburger icon styling */
+.hamburgerMenu {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburgerMenu span {
+  display: block;
   width: 25px;
   height: 3px;
-  background-color: #333;
-  transition: 0.3s;
+  background-color: black;
+  margin: 5px 0;
 }
-*/
 
-/* Mobile Styles */
-/* @media (max-width: 768px) { */
-
-/* Hide default nav and login button on mobile */
-
-/* .nav,
-  .login-button {
+/* Media query mobile */
+@media (max-width: 768px) {
+  .navLinks {
     display: none;
-  } */
+  }
 
-/* Show hamburger icon */
+  .hamburgerMenu {
+    display: block;
+  }
 
-/* .hamburger {
-    display: flex;
-  } */
-
-/* Dropdown menu styles */
-
-/* .nav.open {
+  .show {
     display: flex;
     flex-direction: column;
+    align-items: center;
     position: absolute;
-    top: 60px;
-    right: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    width: 200px;
-  } */
-
-/* .nav.open a,
-  .nav.open .login-button {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-    color: #333;
-    text-align: left;
-  } */
-
-/* .nav.open a:last-child,
-  .nav.open .loginButton {
-    border-bottom: none;
-  } */
-
-/* Show Login button inside the dropdown */
-/* .nav.open .loginButton {
-    display: block;
-    width: 100%;
-    text-align: left;
-    border: none;
-    background-color: transparent;
-    padding: 10px;
-    cursor: pointer;
+    top: 50px;
+    left: 0;
+    right: 0;
+    background-color: #dfffd8;
+    z-index: 10;
   }
-} */
+  .loginButton {
+    display: none;
+  }
+}
