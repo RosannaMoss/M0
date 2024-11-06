@@ -33,7 +33,7 @@ export default function Header() {
           <span></span>
         </div>
 
-        {/* Navigation links with conditional class based on menuOpen state */}
+        {/* Conditional nav links */}
         <nav className={`${styles.navLinks} ${menuOpen ? styles.show : ""}`}>
           <a href="#">Home</a>
           <a href="#">About Us</a>
