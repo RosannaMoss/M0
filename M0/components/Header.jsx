@@ -30,9 +30,6 @@ export default function Header() {
           onClick={toggleMenu}
         >
           <img className={styles.hamburgerImg} src={hamburgerImg}></img>
-          {/* <span></span>
-          <span></span>
-          <span></span> */}
         </div>
 
         {/* Conditional nav links */}

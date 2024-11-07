@@ -58,7 +58,7 @@
 .hamburgerImg {
   width: 25px;
   margin-top: 5px;
-  transition: transform 0.2s ease; /* Apply easing for both open and close */
+  transition: transform 0.2s ease;
 }
 
 .hamburgerMenu.open .hamburgerImg {
