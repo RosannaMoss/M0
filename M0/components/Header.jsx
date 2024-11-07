@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import styles from "./header.module.css";
 import profilePic from "../assets/treeProfile.webp";
+import hamburgerImg from "../assets/hamburger.png";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -28,9 +29,10 @@ export default function Header() {
           className={`${styles.hamburgerMenu} ${menuOpen ? styles.open : ""}`}
           onClick={toggleMenu}
         >
+          <img className={styles.hamburgerImg} src={hamburgerImg}></img>
+          {/* <span></span>
           <span></span>
-          <span></span>
-          <span></span>
+          <span></span> */}
         </div>
 
         {/* Conditional nav links */}

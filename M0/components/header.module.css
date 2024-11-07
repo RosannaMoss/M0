@@ -55,25 +55,16 @@
   cursor: pointer;
 }
 
-.hamburgerMenu span {
-  display: block;
+.hamburgerImg {
   width: 25px;
-  height: 3px;
-  background-color: black;
-  margin: 5px 0;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-.hamburgerMenu.open span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
+  margin-top: 5px;
+  transition: transform 0.2s ease; /* Apply easing for both open and close */
 }
 
-.hamburgerMenu.open span:nth-child(2) {
-  opacity: 0;
+.hamburgerMenu.open .hamburgerImg {
+  transform: rotate(90deg);
 }
 
-.hamburgerMenu.open span:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
-}
 .loginLink {
   display: none;
 }
